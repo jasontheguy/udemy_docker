@@ -1,13 +1,8 @@
-#Use an existing image as a base
-
-#Download and install a dependency
-
-#Tell the image what to do when it starts as a container
 
 FROM alpine 
 
+#Download and install a dependency
 RUN apk add --update redis
 
+#Tell the image what to do when it starts as a container
 CMD ["redis-server"]
-
-
